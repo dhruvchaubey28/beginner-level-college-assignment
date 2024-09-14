@@ -1,7 +1,8 @@
 #include<stdio.h>  
 int main()    
 {
-    int i,n,rem,sum;
+     //Initializing n for user's original input, i for coping the original input number, rem for storing remainder and sum for storing sum;
+    int n,i,rem,sum;
     sum = 0;
     printf("Enter a Number: ");
     scanf("%d",&n);
@@ -12,7 +13,7 @@ int main()
         sum += rem*rem*rem;
         n = n/10;
     }
-    if(i == sum)
+    if(i == sum) // comparing if original number is equal to the new number after looping
     {
         printf("%d is armstrong number",i);
     }
